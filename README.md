@@ -2,7 +2,7 @@
 
 Dog Cord is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
 
-You can join our [dog park](https://www.google.com/search?q=https://dogpack.org/discord) for commits, changes, barks or even support.
+You can join our [dog park](https://discord.gg/8HGpehczrB) for commits, changes, barks or even support.
 
 
 
@@ -19,7 +19,7 @@ You can join our [dog park](https://www.google.com/search?q=https://dogpack.org/
 
 * Tray Customization with bark detection and notification badges
 * Command-line flags to toggle bark (mic) and play dead (deafen) status (Linux)
-* Custom Arguments from [this PR](https://www.google.com/search?q=https://github.com/DogPack/DogCord/pull/46)
+* Custom Arguments from [this PR](https://github.com/Equicord/Equibop/pull/46)
 * arRPC-bun with debug logging support [https://github.com/Creationsss/arrpc-bun](https://github.com/Creationsss/arrpc-bun)
 
 **Linux Note**:
@@ -32,11 +32,11 @@ You can join our [dog park](https://www.google.com/search?q=https://dogpack.org/
 
 ## Installing
 
-Check the [Adoption Center](https://www.google.com/search?q=https://github.com/DogPack/DogCord/releases) page
+Check the [Adoption Center](https://github.com/shteppi/dogcord/releases) page
 
 OR
 
-Check The Downloads from the [website](https://www.google.com/search?q=https://dogpack.org/download)
+Check The Downloads from the [website](https://github.com/shteppi/dogcord/releases)
 
 ### Linux
 
@@ -59,8 +59,8 @@ You need to have the following dependencies installed:
 Packaging will create builds in the dist/ folder
 
 ```sh
-git clone https://github.com/DogPack/DogCord
-cd DogCord
+git clone https://github.com/shteppi/dogcord
+cd dogcord
 
 # Install Dependencies
 bun install
