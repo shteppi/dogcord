@@ -29,6 +29,14 @@ const isLinux = process.platform === "linux";
 
 export let enableHardwareAcceleration = true;
 
+// Fix GPU crashes on Linux - must be called before app is ready
+if (process.platform === "linux") {
+    app.commandLine.appendSwitch("disable-gpu-compositing");
+    app.commandLine.appendSwitch("disable-gpu");
+    app.commandLine.appendSwitch("disable-software-rasterizer");
+    app.commandLine.appendSwitch("in-process-gpu");
+}
+
 function init() {
     setAsDefaultProtocolClient("discord");
 
@@ -42,7 +50,7 @@ function init() {
     if (hardwareAcceleration === false || process.argv.includes("--disable-gpu")) {
         enableHardwareAcceleration = false;
         app.disableHardwareAcceleration();
-    } else {
+    } else if (process.platform !== "linux") {
         if (hardwareVideoAcceleration) {
             enabledFeatures.add("AcceleratedVideoEncoder");
             enabledFeatures.add("AcceleratedVideoDecoder");
