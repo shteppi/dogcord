@@ -66,7 +66,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "staticTitle",
             title: "Static Title",
-            description: 'Makes the window title "Equibop" instead of changing to the current page',
+            description: 'Makes the window title "Dog Cord" instead of changing to the current page 🐕',
             defaultValue: false
         },
         {
@@ -80,7 +80,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
             key: "enableSplashScreen",
             title: "Enable Splash Screen",
             description:
-                "Shows a small splash screen while Equibop is loading. Disabling this option will show the main window earlier while it's still loading.",
+                "Shows a small splash screen while Dog Cord is loading. Disabling this option will show the main window earlier while it's still loading. 🐾",
             defaultValue: true
         },
         {
@@ -103,14 +103,15 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "tray",
             title: "Tray Icon",
-            description: "Add a tray icon for Equibop",
+            description: "Add a tray icon for Dog Cord 🦴",
             defaultValue: true,
             invisible: () => isMac
         },
         {
             key: "minimizeToTray",
             title: "Minimize to tray",
-            description: "Hitting X will make Equibop minimize to the tray instead of closing",
+            description:
+                "Hitting X will make Dog Cord minimize to the tray instead of closing (good boy stays in the yard!)",
             defaultValue: true,
             invisible: () => isMac,
             disabled: () => Settings.store.tray === false
@@ -118,7 +119,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "clickTrayToShowHide",
             title: "Hide/Show on tray click",
-            description: "Left clicking tray icon will toggle the equibop window visibility.",
+            description: "Left clicking tray icon will toggle the Dog Cord window visibility. Woof!",
             defaultValue: false
         },
         {
@@ -190,7 +191,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "openLinksWithElectron",
             title: "Open Links in app (experimental)",
-            description: "Opens links in a new equibop window instead of your web browser",
+            description: "Opens links in a new Dog Cord window instead of your web browser 🐶",
             defaultValue: false
         }
     ],
@@ -242,4 +243,4 @@ function SettingsUI() {
     );
 }
 
-export default wrapTab(SettingsUI, "Equibop Settings");
+export default wrapTab(SettingsUI, "Dog Cord Settings 🐕");

@@ -32,7 +32,7 @@ const NodeCommonOpts: BuildOptions = {
     },
     define: {
         IS_DEV: JSON.stringify(isDev),
-        EQUIBOP_GIT_HASH: JSON.stringify(gitHash)
+        DOGCORD_GIT_HASH: JSON.stringify(gitHash)
     }
 };
 
@@ -105,7 +105,7 @@ await Promise.all([
     }),
     createContext({
         ...CommonOpts,
-        globalName: "Equibop",
+        globalName: "DogCord",
         entryPoints: ["src/renderer/index.ts"],
         outfile: "dist/js/renderer.js",
         format: "iife",
@@ -121,24 +121,24 @@ await Promise.all([
 const watch = process.argv.includes("--watch");
 
 if (watch) {
-	await Promise.all(contexts.map((ctx) => ctx.watch()));
+    await Promise.all(contexts.map(ctx => ctx.watch()));
 } else {
-	const results = await Promise.all(
-		contexts.map(async (ctx) => {
-			const result = await ctx.rebuild();
-			await ctx.dispose();
-			return result;
-		}),
-	);
+    const results = await Promise.all(
+        contexts.map(async ctx => {
+            const result = await ctx.rebuild();
+            await ctx.dispose();
+            return result;
+        })
+    );
 
-	for (const result of results) {
-		if (result.metafile) {
-			const outputs = Object.keys(result.metafile.outputs);
-			for (const output of outputs) {
-				const meta = result.metafile.outputs[output];
-				const size = (meta.bytes / 1024).toFixed(2);
-				console.log(`  ${output} ${size} KB`);
-			}
-		}
-	}
+    for (const result of results) {
+        if (result.metafile) {
+            const outputs = Object.keys(result.metafile.outputs);
+            for (const output of outputs) {
+                const meta = result.metafile.outputs[output];
+                const size = (meta.bytes / 1024).toFixed(2);
+                console.log(`  ${output} ${size} KB`);
+            }
+        }
+    }
 }

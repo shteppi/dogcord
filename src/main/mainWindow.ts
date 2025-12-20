@@ -85,24 +85,24 @@ function initMenuBar(win: BrowserWindow) {
 
     const subMenu = [
         {
-            label: "About Equibop",
+            label: "About Dog Cord 🐕",
             click: createAboutWindow
         },
         {
-            label: "Force Update Equicord",
+            label: "Force Update DogPack 🦴",
             async click() {
                 await downloadVencordAsar();
                 app.relaunch();
                 app.quit();
             },
-            toolTip: "Equibop will automatically restart after this operation"
+            toolTip: "Dog Cord will automatically restart after this operation"
         },
         {
-            label: "Reset Equibop",
+            label: "Reset Dog Cord 🐾",
             async click() {
                 await clearData(win);
             },
-            toolTip: "Equibop will automatically restart after this operation"
+            toolTip: "Dog Cord will automatically restart after this operation"
         },
         {
             label: "Relaunch",
@@ -169,7 +169,7 @@ function initMenuBar(win: BrowserWindow) {
 
     const menuItems = [
         {
-            label: "Equibop",
+            label: "Dog Cord",
             role: "appMenu",
             submenu: subMenu.filter(isTruthy)
         },
@@ -275,7 +275,7 @@ function initStaticTitle(win: BrowserWindow) {
 
     addSettingsListener("staticTitle", enabled => {
         if (enabled) {
-            win.setTitle("Equibop");
+            win.setTitle("Dog Cord");
             win.on("page-title-updated", listener);
         } else {
             win.off("page-title-updated", listener);
@@ -367,7 +367,7 @@ function buildBrowserWindowOptions(): BrowserWindowConstructorOptions {
     }
 
     if (staticTitle) {
-        options.title = "Equibop";
+        options.title = "Dog Cord";
     }
 
     if (process.platform === "darwin") {

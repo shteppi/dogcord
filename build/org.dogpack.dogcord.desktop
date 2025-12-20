@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Dog Cord
+GenericName=Internet Messenger for Good Boys
+Type=Application
+Exec=dogcord %U
+Icon=org.dogpack.dogcord
+Categories=Network;InstantMessaging;Chat;
+Keywords=discord;vencord;electron;chat;dogcord;woof;bark;dogpack;
+MimeType=x-scheme-handler/discord;
+StartupWMClass=dogcord

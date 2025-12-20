@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>org.dogpack.dogcord</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0-or-later</project_license>
+	<name>Dog Cord</name>
+	<icon type="stock">org.dogpack.dogcord</icon>
+	<summary>A snappy Discord desktop client for good boys and girls 🐕</summary>
+	<description>
+		<p>Dog Cord is a custom Discord desktop client aiming to give you better performance, zoomies, and a range of useful features. Woof!</p>
+	</description>
+	<categories>
+		<category>Network</category>
+		<category>InstantMessaging</category>
+	</categories>
+	<developer_name>DogPack Contributors</developer_name>
+	<launchable type="desktop-id">org.dogpack.dogcord.desktop</launchable>
+	<screenshots>
+		<screenshot type="default">
+			<caption>Dog Cord settings page and about window open</caption>
+			<image type="source">https://files.catbox.moe/4medht.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>A dialog showing screenshare options</caption>
+			<image type="source">https://files.catbox.moe/22q8fx.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>A screenshot of a Discord server</caption>
+			<image type="source">https://files.catbox.moe/a2rz3y.png</image>
+		</screenshot>
+	</screenshots>
+	<releases>
+		<release version="3.1.4" date="2025-12-7" type="stable">
+			<url>https://github.com/shteppi/dogcord/releases/tag/v3.1.4</url>
+			<description>
+				<p>What's Changed 🐾</p>
+				<ul>
+					<li>First release as Dog Cord! Woof!</li>
+					<li>DogPack preinstalled</li>
+					<li>Much more lightweight and faster (Zoomies included!)</li>
+				</ul>
+			</description>
+		</release>
+	</releases>
+	<url type="homepage">https://github.com/shteppi/dogcord</url>
+	<url type="bugtracker">https://github.com/shteppi/dogcord/issues</url>
+	<content_rating type="oars-1.1"/>
+</component>

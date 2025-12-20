@@ -18,7 +18,7 @@ import { IpcCommands } from "shared/IpcEvents";
 import { onIpcCommand } from "./ipcCommands";
 import { Settings } from "./settings";
 
-const logger = new Logger("EquibopRPC", "#5865f2");
+const logger = new Logger("DogCordRPC 🐕", "#5865f2");
 
 async function lookupAsset(applicationId: string, key: string): Promise<string> {
     return (await ApplicationAssetUtils.fetchAssetIds(applicationId, [key]))[0];
@@ -152,7 +152,7 @@ async function initArRPCBridge() {
     const arrpcStatus = VesktopNative.arrpc?.getStatus?.();
 
     if (!arrpcStatus?.enabled && !arrpcStatus?.running) {
-        logger.warn("Equibop's built-in arRPC is disabled and not running");
+        logger.warn("Dog Cord's built-in arRPC is disabled and not running");
         stopWebSocket();
         return;
     }

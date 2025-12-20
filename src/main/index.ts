@@ -21,9 +21,9 @@ import { Settings, State } from "./settings";
 import { setAsDefaultProtocolClient } from "./utils/setAsDefaultProtocolClient";
 import { isDeckGameMode } from "./utils/steamOS";
 
-console.log("Equibop v" + app.getVersion());
+console.log("Dog Cord v" + app.getVersion() + " 🐕");
 
-process.env.EQUICORD_USER_DATA_DIR = DATA_DIR;
+process.env.DOGPACK_USER_DATA_DIR = DATA_DIR;
 
 const isLinux = process.platform === "linux";
 
@@ -108,7 +108,7 @@ function init() {
     if (isDeckGameMode) nativeTheme.themeSource = "dark";
 
     app.whenReady().then(async () => {
-        if (process.platform === "win32") app.setAppUserModelId("org.equicord.equibop");
+        if (process.platform === "win32") app.setAppUserModelId("org.dogpack.dogcord");
 
         registerScreenShareHandler();
         registerMediaPermissionsHandler();

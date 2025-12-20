@@ -179,7 +179,7 @@ GVariant *StatusNotifierItem::handle_get_property(
     }
     else if (g_strcmp0(property_name, "Id") == 0)
     {
-        return g_variant_new_string("equibop");
+        return g_variant_new_string("dogcord");
     }
     else if (g_strcmp0(property_name, "Title") == 0)
     {

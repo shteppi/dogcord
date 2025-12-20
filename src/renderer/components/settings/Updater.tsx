@@ -16,8 +16,10 @@ export function Updater() {
 
     return (
         <div className={cl("updater-card")}>
-            <Text variant="text-md/semibold">Your Vesktop is outdated!</Text>
-            <Text variant="text-sm/normal">Staying up to date is important for security and stability.</Text>
+            <Text variant="text-md/semibold">Your Dog Cord is outdated! 🐕</Text>
+            <Text variant="text-sm/normal">
+                Staying up to date is important for security and stability. Good boys stay updated!
+            </Text>
 
             <Button
                 onClick={() => VesktopNative.app.openUpdater()}

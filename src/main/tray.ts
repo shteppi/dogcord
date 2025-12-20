@@ -209,13 +209,13 @@ export async function initTray(win: BrowserWindow, setIsQuitting: (val: boolean)
                 const initialImage = await getCachedTrayImage(trayVariant);
                 const pixmap = await nativeImageToPixmap(initialImage);
                 nativeSNI.setStatusNotifierIcon(pixmap);
-                nativeSNI.setStatusNotifierTitle("Equibop");
+                nativeSNI.setStatusNotifierTitle("Dog Cord");
 
                 const menuItems = [
                     { id: 1, label: win.isVisible() ? "Hide" : "Open", enabled: true, visible: true },
                     { id: 2, label: "About", enabled: true, visible: true },
-                    { id: 3, label: "Repair Equicord", enabled: true, visible: true },
-                    { id: 4, label: "Reset Equibop", enabled: true, visible: true },
+                    { id: 3, label: "Repair DogPack 🐕", enabled: true, visible: true },
+                    { id: 4, label: "Reset Dog Cord 🦴", enabled: true, visible: true },
                     {
                         id: 5,
                         label: "Restart arRPC",
@@ -246,13 +246,13 @@ export async function initTray(win: BrowserWindow, setIsQuitting: (val: boolean)
                         case 2: // about
                             createAboutWindow();
                             break;
-                        case 3: // repair equicord
+                        case 3: // repair dogpack
                             downloadVencordAsar().then(() => {
                                 app.relaunch();
                                 app.quit();
                             });
                             break;
-                        case 4: // reset Equibop
+                        case 4: // reset Dog Cord
                             clearData(win);
                             break;
                         case 5: // restart arRPC-bun
@@ -298,7 +298,7 @@ export async function initTray(win: BrowserWindow, setIsQuitting: (val: boolean)
             click: createAboutWindow
         },
         {
-            label: "Repair Equicord",
+            label: "Repair DogPack 🐕",
             async click() {
                 await downloadVencordAsar();
                 app.relaunch();
@@ -306,7 +306,7 @@ export async function initTray(win: BrowserWindow, setIsQuitting: (val: boolean)
             }
         },
         {
-            label: "Reset Equibop",
+            label: "Reset Dog Cord 🦴",
             async click() {
                 await clearData(win);
             }
@@ -339,7 +339,7 @@ export async function initTray(win: BrowserWindow, setIsQuitting: (val: boolean)
 
     const initialImage = await getCachedTrayImage(trayVariant);
     tray = new Tray(initialImage);
-    tray.setToolTip("Equibop");
+    tray.setToolTip("Dog Cord 🐾");
 
     if (isLinux) {
         tray.on("click", onTrayClick);

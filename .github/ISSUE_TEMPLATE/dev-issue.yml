@@ -1,17 +1,17 @@
-name: Equibop Developer Issue
-description: Reserved for Equibop Developers. Join our support server for support.
+name: Dog Cord Developer Issue
+description: Reserved for Dog Cord Developers. Join our dog park for support. 🐕
 
 body:
     - type: markdown
       attributes:
           value: |
-              # This form is reserved for Equibop Developers. Do not open an issue.
+              # This form is reserved for Dog Cord Developers. Do not open an issue. 🐾
 
-              Instead, use the [#support channel](https://discord.com/channels/1173279886065029291/1297590739911573585) on our [Discord server](https://equicord.org/discord) for help and reporting issues.
+              Instead, use the [#support channel](https://discord.gg/8HGpehczrB) on our [Dog Park (Discord server)](https://discord.gg/8HGpehczrB) for help and reporting fleas (issues).
 
               Your issue will be closed immediately with no comment and you will be blocked if you ignore this.
 
-              This is because 99% of issues are not actually bugs, but rather user or system issues and it adds a lot of noise to our development process.
+              This is because 99% of issues are not actually bugs, but rather user or system issues and it adds a lot of noise to our development process. Woof!
     - type: textarea
       id: content
       attributes:
