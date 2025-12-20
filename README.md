@@ -17,7 +17,7 @@ You can join our [Dog Park](https://discord.gg/8HGpehczrB) for commits, changes,
 
 - Tray Customization with bark detection and notification badges
 - Command-line flags to toggle bark (mic) and play dead (deafen) status (Linux)
-- Custom Arguments from [this PR](https://github.com/Equicord/Equibop/pull/46)
+- Custom Arguments from [this PR](https://github.com/shteppi/dogcord/pull/46)
 - arRPC-bun with debug logging support [https://github.com/Creationsss/arrpc-bun](https://github.com/Creationsss/arrpc-bun)
 
 **Linux Note** 🐧:

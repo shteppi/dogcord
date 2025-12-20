@@ -229,7 +229,7 @@ GVariant *StatusNotifierItem::handle_get_property(
     {
         GVariantBuilder builder;
         g_variant_builder_init(&builder, G_VARIANT_TYPE("(sa(iiay)ss)"));
-        g_variant_builder_add(&builder, "s", "equibop");
+        g_variant_builder_add(&builder, "s", "dogcord");
         g_variant_builder_open(&builder, G_VARIANT_TYPE("a(iiay)"));
         g_variant_builder_close(&builder);
         g_variant_builder_add(&builder, "s", self->current_title.c_str());
@@ -534,7 +534,7 @@ StatusNotifierItem::StatusNotifierItem()
         return;
     }
 
-    service_name = "org.equicord.equibop.StatusNotifierItem";
+    service_name = "org.dogcord.dogcord.StatusNotifierItem";
     object_path = "/StatusNotifierItem";
 }
 
